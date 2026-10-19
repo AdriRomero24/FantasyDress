@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Dress</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <link rel="icon" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+      <div class="logo" id="logo">
+        <a href="principal.html"><img alt="Logo" src="assets/logo.png" width="120" ></a>
+      </div>
+       
+
+      <nav class="seleccioncabecera">
+        <div class="selecto" id="catalogo_diseno"> 
+            <img alt="vestido" src="assets/vestido.png" width="90px">
+        </div>
+
+        <div class="selecto" id="ubicacion_diseno">
+             <img alt="ubicacion" src="assets/ubi.png" width="90px">
+        </div>
+
+        <div class="selecto" id="contacto_diseno">
+            <img alt="contacto" src="assets/contacto.png" width="90px">
+        </div>
+
+        <div id="catalogo" >Catalogo</div>
+        <a href="ubicacion/ubicacion.html"><div id="ubicacion" >Ubicacion</div></a>
+        <a href="contacto/contacto.html"><div id="contacto" >Contacto</div></a>
+        <div class="blanco"></div>
+        
+      </nav>
+
+    </header>
+
+    <section class="seccion_bloque" id="carrusel">
+
+      <div class="cuadro_texto" id="texto_principal1">
+        <h1 id="encabezado1">Disfruta de lo nuevo de la moda</h1>
+        <p id="parrafo1"> Nueva Coleccion de Blusas, Vestidos, Trajes de baño, entre otros estilos más.
+             Fantasy Dress Te ofrece lo último en moda en todo su catálogo de conjuntos.
+        </p>
+        
+        <p id="parrafo2">Fantasy Dress Te ofrece lo último en moda en todo su catálogo de conjuntos.</p>
+      </div>
+
+      <div class="multimedia">
+        <div class="tienda1"></div>
+        <div class="tienda2"></div> 
+        <div class="modelo1"></div>
+        <div class="modelo2"></div> 
+      </div>
+    </section>
+
+    <article class="seccion_bloque" id="articulo_video">
+         <div class="multimedia" id="video">
+            <video src="assets/video1.mp4" autoplay muted id="video1" loop ></video>
+            <div class="video_info" id="videoinfo1">Estilos</div>
+
+            <video src="assets/video2.mp4" autoplay muted id="video2" loop></video>
+            <div class="video_info" id="videoinfo2">Exclusividad</div>
+         </div>
+         
+         <div class="cuadro_texto" id="texto_principal_video">
+            <h1>Disfruta de lo nuevo de la moda</h1>
+        <p> Nueva Coleccion de Blusas, Vestidos, Trajes de baño, entre otros estilos más.
+             Fantasy Dress Te ofrece lo último en moda en todo su catálogo de conjuntos.
+        </p>
+        
+        <p>Fantasy Dress Te ofrece lo último en moda en todo su catálogo de conjuntos.</p>
+         </div>
+    </article>
+
+    <article class="article_slider">
+        <div class="slider" >
+
+           <div id="blusa" class="imagen_slider">
+               <img alt="blusa" src="assets/blusa.jpg">
+               <h2> Blusas </h2>
+           </div>
+
+           <div id="accesorio" class="imagen_slider">
+            <img alt="accesorio" src="assets/accesorio.png">
+             <h2> Accesorios </h2>
+           </div>
+
+           <div id="vestido" class="imagen_slider seleccionado">
+              <img alt="vestido" src="assets/vestidos.png">
+              <h2> Vestidos </h2>
+           </div>
+
+           <div id="bikini" class="imagen_slider">
+               <img alt="bikini" src="assets/bikini.jpg">
+               <h2> Bikinis </h2>
+           </div>
+           
+           <div id="pantalon" class="imagen_slider">
+               <img alt="pantalon" src="assets/pantalones.png">
+               <h2> Pantalones </h2>
+           </div>
+        </div>
+
+        <div class="botones">
+          <div id="boton1" class="boton"></div>
+          <div id="boton2" class="boton"></div>
+        </div>
+
+        <div class="cuadro_slider"> Tenemos los diseños que buscas</div>
+    </article>
+    
+    <article class="seccion_bloque">
+      <div class="cuadro_texto" id="info_adicional">
+         <menu class="lista_info">
+            <li> <div class="lista_seleccion selecto" id="trayectoria"></div></li>
+            <li> <div class="lista_seleccion" id="pago"></div></li>
+            <li> <div class="lista_seleccion" id="servicio"></div></li>
+         </menu>
+
+         <div class="texto">
+            <h1 id="titulo_info">Trayectoria</h1>
+        <p id="parrafo_info"> Nueva Coleccion de Blusas, Vestidos, Trajes de baño, entre otros estilos más.
+             Fantasy Dress Te ofrece lo último en moda en todo su catálogo de conjuntos.
+        </p>
+         </div>
+
+      </div>
+
+      <div class="multimedia">
+        <div class="trayectoria" id="foto_info"></div>
+      </div>
+    </article>
+
+    <section class="seccion_bloque" id="formulario_sugerencia">
+      <div class="formulario">
+        <form method="post" id="formulario" action="https://api.web3forms.com/submit">
+          
+           <input type="hidden" name="access_key" value="cebba3a8-d504-442b-9284-764d4d752f4b">
+
+          <label for="nombre">Nombre y apellido</label>         
+          <input type="text" placeholder="Ingresa tu nombre y apellido" id="nombre" name="name" required>
+
+          <label for="correo">Correo Electrónico</label>
+          <input type="email" placeholder="Ingresa tu correo electrónico" id="correo" name="email" required>
+
+          <label for="comentario">Sugerencia y Comentarios</label>
+          <textarea name="comentario" cols="35" rows="10" placeholder="Ingresa tu comentario" style="display: block;" id="comentario" name="message" required></textarea>
+
+          Sube Tu mensaje <input type="submit" value="Subir" style="display: inline;" id="subir">
+        </form>
+      </div>
+      
+      <div class="cuadro_texto" id="texto_formulario">
+        <h1>Envia tu Sugerencia!</h1>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <img src="assets/logo.png" alt="logo_fantasy" width="200px">
+
+      <address class="referencia">
+        Fantasy Dress M.K © 2026. Todos los derechos reservados
+        <br>
+        <br>
+        Adrian Romero
+        <br>
+        V31951276
+        <br>
+        <br>
+        REPÚBLICA BOLIVARIANA DE VENEZUELA  
+        <br>
+          UNIVERSIDAD BICENTENARIA DE ARAGUA
+        <br>
+         VICERRECTORADO ACADÉMICO
+        <br>
+         DECANATO DE INGENIERÍA
+         <br>
+           ESCUELA DE SISTEMAS 
+          <br>
+         SAN JOAQUÍN DE TURMERO - ESTADO ARAGUA
+      </address>
+
+      <img src="assets/logo_uba.png" alt="logo_uba" width="200px">
+    </footer>
+
+    
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
