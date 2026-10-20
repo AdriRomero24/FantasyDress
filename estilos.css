@@ -14,6 +14,7 @@ header{
 body{
 
     margin: 0;
+    overflow-x: clip;
     
 }
 
@@ -189,13 +190,20 @@ body{
         position: relative;
         z-index: 3;
         transition: all 1s;
+        
+
+        &#texto_principal1{
+
+            min-width: 500px;
+            padding-right: 170px;
+        }
 
         &#texto_principal_video {
 
             background-color: #601D49;
             border-radius: 10px 0px 0px 10px;
-            
-             
+            max-width: 500px;
+            min-width: 600px;
         }
 
 
@@ -219,15 +227,27 @@ body{
                
             }
 
+            &.tiktok{
+
+                text-align: end;
+                translate: 170px 0px;
+                border-radius: 10px 0px 0px 10px;
+                
+                
+            }
+
+            
             
 
             
         }
 
+        
+
         & .lista_info{
 
             height: 200px;
-            margin-right: 100px;
+            margin-right: 0px;
             translate: -50px 0px;
             
             
@@ -292,11 +312,40 @@ body{
 
                 display: flex;
                 align-items: flex-start;
-                transform: translateX(440px);
-
+                transform: translateX(440px) translateY(-25px);
+                
+                
                 & li{
 
                     margin-right: 40px;
+                    
+                    
+
+                    & #instagram_boton{
+
+                        background-image: url(assets/instagram.png);
+                        background-size: 50px;
+                        background-position: 5px 5px;
+                        background-color: #FF467A;
+                        
+                    }
+
+                    & #tiktok_boton{
+
+                        background-image: url(assets/tiktok.png);
+                        background-size: 50px;
+                        background-position: 5px 5px;
+                        background-color: #FF467A;
+                        
+                    }
+
+                    & #whatsapp_boton{
+
+                        background-image: url(assets/whatsapp.png);
+                        background-size: 50px;
+                        background-position: 5px 5px;
+                        background-color: #FF467A;
+                    }
                 
                 }
             }
@@ -307,35 +356,62 @@ body{
             margin-left: auto;
             border-radius: 10px 0px 0px 10px;
             background-color: #849096;
+            min-width: 400px;
         }
         
         &#ubi_info1{
 
             border-radius: 10px 0px 0px 10px;
+            background-color: #6d1d51;
+            min-width: 400px;
            
         }
         
         &#ubi_info2{
 
             border-radius: 0px 10px 10px 0px;
+            background-color: #6d1d51;
+            min-width: 500px;
         }
 
         &#ubi_info3 {
 
             border-radius: 10px 0px 0px 10px;
+            background-color: #6d1d51;
+            min-width: 400px;
         }
         
         
        &#redes_sociales{
 
         padding-right: 900px;
+        
         text-align: center;
+        
 
           & h1, p{
 
-            transform: translateX(390px) translateY(-30px);
+            transform: translateX(390px) translateY(-35px);
+            margin-top: 0px;
           }
        }
+
+       &#red_instagram {
+
+        border-radius: 0px 10px 10px 0px;
+        
+       }
+       .texto{
+
+          &.adic{
+            min-width: 500px;
+            
+          }
+        margin-left: 0px;
+        
+       }
+
+       
 
         
         
@@ -346,7 +422,7 @@ body{
         height: 500px;
         width: 624px;
         display: flex;
-        
+        overflow-x: clip;
         
         & .tienda1 {
             
@@ -427,6 +503,7 @@ body{
          &#video_ubicacion2{
 
             margin-left: 200px;
+            overflow-x: visible;
          }
 
          & .trayectoria{
@@ -467,7 +544,81 @@ body{
             transition: all 0.5s;
 
          }
+
+         & .foto{
+            
+            background-size: 626px; 
+            padding-bottom: 500px;
+            padding-right: 626px;
+            transition: all 1s;
+            background-repeat: no-repeat;
+            
+            
+
+            &#vestido_1{
+            
+            background-image: url(assets/vestido1.jpg);
+            background-position: 0px -160px;
+            
+            }
+
+            &#vestido_2{
+            
+            background-image: url(assets/vestido2.png);
+            background-position: 0px 0px;
+            
+            }
+
+            &#vestido_3{
+
+              background-image: url(assets/vestido3.jpg);
+            }
+
+            &#conjunto_1{
+
+              background-image: url(assets/conjunto1.jpg);
+              background-position: 0px -100px;
+            }
+
+            &#conjunto_2{
+
+              background-image: url(assets/conjunto2.jpg);
+              background-position: 0px -100px;
+            }
+
+            &#conjunto_3{
+
+              background-image: url(assets/conjunto3.jpg);
+              
+            }
+
+            &#casual_1{
+
+                background-image: url(assets/casual1.jpg);
+                background-position: 0px -235px;
+            }
+
+            &#casual_2{
+
+                background-image: url(assets/casual2.jpg);
+               background-position: 0px -13px;
+            }
+
+             &#casual_3{
+
+                background-image: url(assets/casual3.jpg);
+               
+            }
+            
+
+
+         }
         
+    }
+
+    & #vestido_texto, #conjunto_texto, #casual_texto{
+
+        min-width: 500px;
     }
 
    
@@ -490,6 +641,7 @@ body{
           font-weight: bold;
           font-size: 45px;
           text-align: center;
+          min-width: 400px;
           
           
           
@@ -570,14 +722,31 @@ body{
             background-color: #330924;
         }
         
-        &#boton1 {
+        &#boton1{
 
             background-image: url(assets/flechaizquierda.png) ;
             
         }
 
         &#boton2{
-  
+            background-image: url(assets/flechaderecha.png);
+        }
+        
+        &#boton3{
+            background-image: url(assets/flechaizquierda.png) ;
+
+        }
+
+        &#boton4{
+            background-image: url(assets/flechaderecha.png);
+        }
+
+         &#boton5{
+            background-image: url(assets/flechaizquierda.png) ;
+
+        }
+
+        &#boton6{
             background-image: url(assets/flechaderecha.png);
         }
     }
@@ -794,6 +963,8 @@ body{
         }
 
     }
+
+    
 }
 
 .formulario{
@@ -845,7 +1016,7 @@ body{
 
     & form{
 
-        margin-left: 50px;
+        margin-left: 100px;
         margin-top: 50px;
 
     }
@@ -874,6 +1045,7 @@ body{
        text-align: center;
        translate: 0px 40px;
        font-family: poppins;
+       min-width: 400px;
     }
     
     & pre{
@@ -890,19 +1062,129 @@ body{
 
 .apartado {
 
+    
 
-    & iframe {
+    & iframe{
 
         height: 500px;
+        border: none;
+        border-radius: 7px;
+        margin-left: 160px;
+            
+            transition: all 0.5s;
 
         &#ubicacion_mapa{
             
            border-radius: 15px;
+           margin-left: 0px;
+           
            
         }
 
+       
     }
+
+    & #red:hover{
+
+                box-shadow: 0px 7px 9px 3px black;
+    }
+    
+    & img{
+
+        width: 400px;
+        border: none;
+        border-radius: 7px;
+        margin-left: 160px;
+        transition: all 0.5s;
+            
+
+    }
+    
+
+    
 }
+
+.logo_red_social{
+
+    width: 110px;
+    height: 110px;
+    background-color: #E11A45;
+    translate: 45px 20px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+    
+   
+
+    &:hover{
+
+        box-shadow: 0px 0px 8px 3px black;
+        
+    }
+
+    &.instagram {
+
+        background-image: url(assets/instagram.png);
+    }
+
+    &.tiktok{
+
+        background-image: url(assets/tiktok.png);
+    }
+
+    &.whatsapp{
+
+        background-image: url(assets/whatsapp.png);
+    }
+    
+    
+    
+}
+
+.slidfoto{
+   
+    
+    &.botones{
+
+        position: absolute;
+        align-self: center;
+        visibility: hidden;
+        z-index: 5;
+        transition: all 0.5s;
+        opacity: 0%;
+        
+       
+
+        & #boton2, #boton4, #boton6{
+
+            margin-left: 480px;
+            
+        }
+
+        
+      
+
+    }
+   
+    &.sobrefoto{
+
+        visibility: visible;
+        opacity: 80%;
+        
+    }
+
+    &#detector_boton1, #detector_boton2, #detector_boton3{
+
+        position: absolute;
+    }
+
+}
+
+
+
 
 
 
