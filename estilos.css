@@ -404,7 +404,7 @@ body{
        .texto{
 
           &.adic{
-            min-width: 600px;
+            min-width: 500px;
             
           }
         margin-left: 0px;
